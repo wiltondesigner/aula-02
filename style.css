@@ -22,7 +22,9 @@
 }
 
 body {
-    background: linear-gradient(to bottom left, var(--gradient-light-green) , var(--gradient-deep-green) );
+    background: linear-gradient(-45deg, var(--gradient-light-green), var(--gradient-deep-green), #025237, #0f0a1e);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
     min-height: 100vh;
     width: 100vw;
     display: flex;
