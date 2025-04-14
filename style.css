@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url(./effects.css);
+
+:root {
+    --border-radius-image: 50%;
+    --border-radiius-container: 12px;
+    --border-radiius-button: 10px;
+    --gradient-light-green: #00433b;
+    --gradient-deep-green: #0f0a1e;
+    --button-hover-green: #025237;
+    --container-blur: rgba(255, 255, 255, 0.05);
+    --shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    gap: 5px;
+    align-items: center;
+}
+
+body {
+    background: linear-gradient(to bottom left, var(--gradient-light-green) , var(--gradient-deep-green) );
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    background-color: var(--container-blur);
+    backdrop-filter: blur(8px);
+    max-width: 350px;
+    width: 350px;
+    height: 470px;
+    margin: 60px auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: var(--border-radiius-container);
+    box-shadow: var(--shadow);
+    
+    }
+
+.image img {
+    height: 96px;
+    width: 96px;
+    border-radius: var(--border-radius-image);
+    border: 2px solid white;
+}
+
+.info {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.info h1 {
+    font-family: "Montserrat", serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: azure;
+}
+
+.info h2 {
+    font-family: "Nunito", serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #F1F1FF;
+    font-style: bold;
+}
+
+.easter-egg p {
+    font-family: "Nunito", serif;
+    font-weight: 200;
+    font-style: italic;
+    color: azure;
+}
+
+.link-list {
+    margin-top: 20px;
+}
+
+.link-list ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin: 10px 0;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.link-list a{
+    font-family: "Nunito", serif;
+    text-decoration: none;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 8px; 
+    text-align: center;
+    padding: 12px 40px;
+    border-radius: var(--border-radiius-button);
+    background: #001709;
+    transition: background 300ms ease;
+    align-items: center;
+   }
+
+.link-list a:hover {
+    background: #01973d;
+    color: #ffffff;
+}
